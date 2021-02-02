@@ -1,5 +1,5 @@
 <template>
-  <menu>
+  <menu class="menu">
     <div class="navigation">
       <nuxt-link to="/" class="nav">
         <font-awesome-icon icon="user" />
