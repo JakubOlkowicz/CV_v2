@@ -87,7 +87,7 @@
       }
     }
     section.content {
-      height: 90%;
+      height: calc(100vh - 85px);
       width: 100%;
       article {
         height: 99%;
