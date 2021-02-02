@@ -1,0 +1,51 @@
+menu {
+  height: 85%;
+  padding: 20px;
+  z-index: 10;
+  background: rgba(#f7fbff, 0.45);
+  box-shadow: 0 8px 32px 0 rgba(#547a82, 0.35);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border-radius: 10px 0 0 10px;
+  border: 1px solid rgba(#547a82, 0.15);
+  margin: auto;
+  > .navigation {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    > div {
+      margin-top: auto;
+      span {
+        width: 100%;
+        text-align: center;
+        display: block;
+      }
+      .nav {
+        margin: 0;
+      }
+    }
+  }
+  a.nav {
+    all: unset;
+    font-size: 24px;
+    font-weight: 900;
+    color: #243d40;
+    margin: 10px auto;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: transparent;
+    cursor: pointer;
+    transition: all 400ms linear;
+    &.nuxt-link-exact-active {
+      transition: all 400ms linear;
+      background: #a6958f;
+    }
+    &:hover {
+      background: rgba(#a6958f, 0.6);
+    }
+  }
+}

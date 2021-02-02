@@ -1,0 +1,37 @@
+article.about {
+  .text-about {
+    p {
+      font-size: 18px;
+    }
+  }
+  .skill-title {
+    text-align: left;
+    font-size: 24px;
+    font-weight: bold;
+    margin: 15px auto;
+    width: 100%;
+    display: block;
+    color: #f7fbff;
+  }
+  .skill-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .skill {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 15px 0;
+    margin: 10px 0;
+    width: 45%;
+    & > p {
+      margin: 0 5px;
+    }
+    svg {
+      font-size: 36px;
+      color: #243d40;
+    }
+  }
+}

@@ -1,0 +1,47 @@
+article#contact {
+  .contact-single {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 15px 10px;
+    span {
+      display: flex;
+      align-items: center;
+      svg {
+        font-size: 18px;
+        margin: 10px;
+        color: #243d40;
+      }
+    }
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0;
+    .hidden {
+      display: none;
+    }
+    & > div {
+      margin: 20px 10px;
+    }
+  }
+  .form-field {
+    all: unset;
+    font-size: 16px;
+    font-weight: 500;
+    border: none;
+    border-bottom: solid 2px #a6958f;
+    margin-right: auto;
+    width: 80%;
+    height: 50px;
+    background-color: transparent;
+    transition: all 600ms linear;
+    &:focus {
+      border-color: #243d40;
+      transition: all 600ms linear;
+    }
+  }
+  textarea.from-field {
+    @extend .form-field;
+    height: 260px;
+  }
+}

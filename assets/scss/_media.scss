@@ -1,0 +1,128 @@
+@media only screen and (max-width: 1024px) {
+  main {
+    width: 90%;
+  }
+  section.content {
+    width: 95%;
+    height: 100%;
+    article {
+      border-radius: 10px;
+    }
+  }
+  .menu {
+    border-radius: 10px;
+  }
+  .title {
+    font-size: 64px;
+  }
+  .btn {
+    margin: 5px;
+    font-size: 14px;
+    padding: 5px 15px;
+  }
+  section.me {
+    display: none;
+  }
+}
+@media only screen and (max-width: 768px) {
+  body {
+    main {
+      width: 95%;
+    }
+    menu {
+      padding: 10px;
+      margin-top: 0;
+      width: auto;
+      margin: auto 0;
+      .navigation {
+        flex-direction: column;
+        height: 100%;
+        a.nav {
+          margin: 10px;
+        }
+      }
+    }
+    section.content {
+      width: 85%;
+      height: 100%;
+    }
+  }
+}
+@media only screen and (max-width: 480px) {
+  body {
+    h1.title {
+      font-size: 60px;
+      padding: 5px 0;
+    }
+    h2.title {
+      font-size: 24px;
+    }
+    main {
+      width: 95%;
+      height: 100vh;
+      flex-direction: column-reverse;
+    }
+    menu {
+      margin: 0 auto;
+      width: 100%;
+      height: auto;
+      padding: 0;
+      border-radius: 10px;
+      > .navigation {
+        flex-direction: row;
+        align-items: center;
+        padding: 0 5px;
+        a.nav {
+          margin: 5px auto;
+        }
+        > div {
+          margin: 0;
+          margin-left: auto;
+          display: flex;
+          align-items: center;
+          span {
+            font-size: 12px;
+          }
+        }
+      }
+    }
+    section.content {
+      height: 90%;
+      width: 100%;
+      article {
+        height: 99%;
+        padding: 10px 15px;
+        &.about {
+          .skill-title {
+            font-size: 20px;
+          }
+          .text-about {
+            p {
+              font-size: 16px;
+            }
+          }
+          .skill {
+            width: 85%;
+            svg {
+              font-size: 24px;
+            }
+          }
+        }
+        &.jobs {
+          .container {
+            .skills-wrapper {
+              img.img-skill {
+                width: 35px;
+              }
+            }
+          }
+        }
+        &#contact {
+          .contact-single {
+            flex-wrap: wrap;
+          }
+        }
+      }
+    }
+  }
+}

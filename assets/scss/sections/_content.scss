@@ -1,0 +1,29 @@
+.content {
+  width: 60%;
+  height: 85%;
+  margin: auto 0;
+  article {
+    &::-webkit-scrollbar {
+      width: 11px;
+    }
+    padding: 20px 35px;
+    overflow-y: auto;
+    z-index: 5;
+    height: 100%;
+    background: rgba(#f7fbff, 0.45);
+    box-shadow: 0 8px 32px 0 rgba(#243d40, 0.35);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border-radius: 0 10px 10px 0;
+    border: 1px solid rgba(#243d40, 0.15);
+    scrollbar-width: thin;
+    scrollbar-color: #243d40;
+    &::-webkit-scrollbar-track {
+      background: #f7fbff;
+    }
+    &::-webkit-scrollbar-thumb {
+      background-color: #243d40;
+      border-radius: 5px;
+    }
+  }
+}
